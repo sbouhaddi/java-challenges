@@ -11,7 +11,7 @@ public class MinMaxChallenge {
         IntStream intstream = Stream.of(1, 2, 3, 4, 5, 6)
                 .mapToInt(i -> i);
         IntStream instream2 = intstream;
-        OptionalInt max = instream2.max();
+        OptionalInt max = instream.max();
         OptionalInt min = instream2.min();
         MinMaxChallenge minMaxChallenge = new MinMaxChallenge();
         int sum = minMaxChallenge.sum(max.orElse(5), min.orElse(5));
